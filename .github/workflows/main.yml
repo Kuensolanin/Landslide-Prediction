@@ -22,4 +22,4 @@ jobs:
     - name: Login to Wandb
       run: wandb login ${{ secrets.WANDB_API_KEY }}
     - name: Train and Test Model
-      run: python model.py
+      run: python "./Landslide Deploment/model.py"
