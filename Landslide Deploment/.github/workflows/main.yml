@@ -2,7 +2,7 @@ name: Train and Test Model
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
