@@ -1,0 +1,43 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.1",
+    "heartbeatAt": "2023-04-11T08:34:32.944724",
+    "startedAt": "2023-04-11T08:34:31.154188",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "Kuroichi",
+    "username": "DELL",
+    "executable": "c:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2611.0,
+        "min": 0.0,
+        "max": 2611.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2611.0,
+            "min": 0.0,
+            "max": 2611.0
+        }
+    ],
+    "disk": {
+        "total": 455.21874618530273,
+        "used": 407.54199600219727
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 11.74881362915039
+    }
+}

@@ -1,0 +1,76 @@
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Configure stats pid to 15076
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Loading settings from C:\Users\DELL\.config\wandb\settings
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Loading settings from c:\Users\DELL\Desktop\Code\End to End ML project\wandb\settings
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-04-11 14:13:30,483 INFO    MainThread:15076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-04-11 14:13:30,486 INFO    MainThread:15076 [wandb_init.py:_log_setup():507] Logging user logs to c:\Users\DELL\Desktop\Code\End to End ML project\wandb\run-20230411_141330-rz8op1w4\logs\debug.log
+2023-04-11 14:13:30,487 INFO    MainThread:15076 [wandb_init.py:_log_setup():508] Logging internal logs to c:\Users\DELL\Desktop\Code\End to End ML project\wandb\run-20230411_141330-rz8op1w4\logs\debug-internal.log
+2023-04-11 14:13:30,487 INFO    MainThread:15076 [wandb_init.py:_jupyter_setup():453] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000131E3950690>
+2023-04-11 14:13:30,487 INFO    MainThread:15076 [wandb_init.py:init():547] calling init triggers
+2023-04-11 14:13:30,487 INFO    MainThread:15076 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-04-11 14:13:30,487 INFO    MainThread:15076 [wandb_init.py:init():571] re-initializing run, found existing run on stack: gonoq2et
+2023-04-11 14:13:30,489 INFO    MainThread:15076 [wandb_run.py:_finish():1892] finishing run kuensolanin/my-awesome-project/gonoq2et
+2023-04-11 14:13:30,489 INFO    MainThread:15076 [wandb_run.py:_atexit_cleanup():2126] got exitcode: 0
+2023-04-11 14:13:30,489 INFO    MainThread:15076 [wandb_run.py:_restore():2109] restore
+2023-04-11 14:13:30,490 INFO    MainThread:15076 [wandb_run.py:_restore():2115] restore done
+2023-04-11 14:13:36,792 INFO    MainThread:15076 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-11 14:13:36,793 INFO    MainThread:15076 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-11 14:13:36,796 INFO    MainThread:15076 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-04-11 14:13:37,004 INFO    MainThread:15076 [wandb_init.py:init():595] starting backend
+2023-04-11 14:13:37,004 INFO    MainThread:15076 [wandb_init.py:init():599] setting up manager
+2023-04-11 14:13:37,006 INFO    MainThread:15076 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-04-11 14:13:37,009 INFO    MainThread:15076 [wandb_init.py:init():605] backend started and connected
+2023-04-11 14:13:37,010 INFO    MainThread:15076 [wandb_run.py:_label_probe_notebook():1237] probe notebook
+2023-04-11 14:13:37,010 INFO    MainThread:15076 [wandb_run.py:_label_probe_notebook():1247] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-04-11 14:13:37,010 INFO    MainThread:15076 [wandb_init.py:init():695] updated telemetry
+2023-04-11 14:13:37,012 INFO    MainThread:15076 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-04-11 14:13:38,864 INFO    MainThread:15076 [wandb_run.py:_on_init():2176] communicating current version
+2023-04-11 14:13:39,845 INFO    MainThread:15076 [wandb_run.py:_on_init():2185] got version response 
+2023-04-11 14:13:39,845 INFO    MainThread:15076 [wandb_init.py:init():782] starting run threads in backend
+2023-04-11 14:13:39,938 INFO    MainThread:15076 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-11 14:13:39,938 INFO    MainThread:15076 [wandb_run.py:_redirect():2012] redirect: 3
+2023-04-11 14:13:39,938 INFO    MainThread:15076 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-11 14:13:39,938 INFO    MainThread:15076 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-11 14:13:39,940 INFO    MainThread:15076 [wandb_init.py:init():824] run started, returning control to user process
+2023-04-11 14:13:39,944 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:13:39,944 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:14:16,250 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:14:16,264 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:14:16,264 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:14:25,581 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:14:25,583 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:14:25,584 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:14:29,940 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:14:29,959 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:14:29,959 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:21:59,920 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:21:59,933 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:21:59,933 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:22:28,896 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:22:28,906 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:22:28,906 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:22:33,197 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:22:33,211 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:22:33,211 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:23:16,598 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:23:16,613 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:23:16,613 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:23:36,905 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:23:36,945 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:23:36,946 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:23:46,070 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:23:46,084 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:23:46,084 INFO    MainThread:15076 [wandb_init.py:_pause_backend():418] pausing backend
+2023-04-11 14:24:18,804 INFO    MainThread:15076 [wandb_init.py:_resume_backend():423] resuming backend
+2023-04-11 14:24:18,811 INFO    MainThread:15076 [wandb_run.py:_finish():1892] finishing run kuensolanin/landslide-prediction/rz8op1w4
+2023-04-11 14:24:18,811 INFO    MainThread:15076 [jupyter.py:save_history():445] not saving jupyter history
+2023-04-11 14:24:18,811 INFO    MainThread:15076 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-04-11 14:24:18,811 INFO    MainThread:15076 [wandb_init.py:_jupyter_teardown():435] cleaning up jupyter logic
+2023-04-11 14:24:18,811 INFO    MainThread:15076 [wandb_run.py:_atexit_cleanup():2126] got exitcode: 0
+2023-04-11 14:24:18,812 INFO    MainThread:15076 [wandb_run.py:_restore():2109] restore
+2023-04-11 14:24:18,812 INFO    MainThread:15076 [wandb_run.py:_restore():2115] restore done
+2023-04-11 14:24:25,594 INFO    MainThread:15076 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-11 14:24:25,594 INFO    MainThread:15076 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-11 14:24:25,600 INFO    MainThread:15076 [wandb_run.py:_footer_sync_info():3434] logging synced files
