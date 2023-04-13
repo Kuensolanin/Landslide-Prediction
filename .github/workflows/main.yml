@@ -8,6 +8,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
 
     steps:
     - uses: actions/checkout@v2
@@ -30,7 +31,7 @@ jobs:
         # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
 
         echo "## Model Metrics : Comparing with master branch"
-        
+
         dvc metrics diff --show-md master > report.md        
         cml-send-comment report.md
     - name: Get changes
