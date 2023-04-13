@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python "./Landslide Deploment/model.py"
+    deps:
+    - path: ./Landslide Deploment/model.py
+      md5: 5df986d10f09c166972dab5f71b7af9b
+      size: 1356
+    outs:
+    - path: LandslideRF.pkl
+      md5: 695b7dfaf1cdb5cee66899b8927ff118
+      size: 1274785
+    - path: metrics.json
+      md5: 9c28a609b63924f20031962cc09aa66b
+      size: 31

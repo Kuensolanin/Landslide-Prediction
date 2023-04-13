@@ -1,12 +1,10 @@
-# outs:
-#   data:
-#     cache: true
-#     persist: true
-#     remote: gdrive
-#     path: bhutan_landslide_data.csv
-
-#   model:
-#     cache: true
-#     persist: true
-#     remote: gdrive
-#     path: model.py
+stages:
+  train:
+    cmd: python "./Landslide Deploment/model.py"
+    deps:
+    - "./Landslide Deploment/model.py"
+    outs:
+    - LandslideRF.pkl
+    metrics:
+    - metrics.json:
+        cache: false

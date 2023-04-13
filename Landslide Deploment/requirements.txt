@@ -1,3 +1,5 @@
-streamlit
+dvc-gdrive
 pandas
 scikit-learn
+streamlit
+wandb
