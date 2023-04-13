@@ -26,11 +26,13 @@ jobs:
       
     - name: Train and Test Model
       run: |
-        dvc remote add -d dvc_gdrive gdrive://1zqtDlwB7kEpRGfz26sPX15wNs9lieK9P
         python "./Landslide Deploment/model.py"
-        dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
-        dvc push -r dvc_gdrive
+        # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
 
+        echo "## Model Metrics : Comparing with master branch"
+        
+        dvc metrics diff --show-md master > report.md        
+        cml-send-comment report.md
     - name: Get changes
       run: |
         git status -uno
