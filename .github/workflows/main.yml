@@ -11,9 +11,8 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
 
     steps:
-    - uses: |
-        actions/checkout@v2
-        iterative/setup-dvc@v1
+    - uses: actions/checkout@v2
+    - uses: iterative/setup-dvc@v1
 
     - name: Install dependencies
       run: |
