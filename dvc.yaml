@@ -1,12 +1,12 @@
-outs:
-  data:
-    cache: true
-    persist: true
-    remote: gdrive
-    path: bhutan_landslide_data.csv
+# outs:
+#   data:
+#     cache: true
+#     persist: true
+#     remote: gdrive
+#     path: bhutan_landslide_data.csv
 
-  model:
-    cache: true
-    persist: true
-    remote: gdrive
-    path: model.py
+#   model:
+#     cache: true
+#     persist: true
+#     remote: gdrive
+#     path: model.py
