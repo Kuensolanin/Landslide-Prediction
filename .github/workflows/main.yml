@@ -32,12 +32,12 @@ jobs:
         dvc push -r dvc_gdrive
 
     - name: Get changes
-        run: |
-          git status -uno
+      run: |
+        git status -uno
 
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: .
-          author_name: CI-CD Pipeline run
-          author_email: klhendup01@gmail.com
-          message: "adding changes from run"
+    - uses: EndBug/add-and-commit@v7
+      with:
+        add: .
+        author_name: CI-CD Pipeline run
+        author_email: klhendup01@gmail.com
+        message: "adding changes from run"
