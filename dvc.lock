@@ -4,12 +4,12 @@ stages:
     cmd: python "./Landslide Deploment/model.py"
     deps:
     - path: ./Landslide Deploment/model.py
-      md5: 5df986d10f09c166972dab5f71b7af9b
+      md5: ddc24ae1ea7fc19148b4193da4cd33d2
       size: 1356
     outs:
     - path: LandslideRF.pkl
-      md5: 695b7dfaf1cdb5cee66899b8927ff118
-      size: 1274785
+      md5: dbfaf2e82b747bd6f46103b95cb5bab1
+      size: 1271761
     - path: metrics.json
-      md5: 9c28a609b63924f20031962cc09aa66b
-      size: 31
+      md5: 6ba59fe9059babc837df55f478305854
+      size: 30

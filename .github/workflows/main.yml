@@ -20,7 +20,7 @@ jobs:
       
       - name: Train and Test Model
         run: |
-          python "./Landslide Deploment/model.py"
+          dvc repro
           # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
 
       - name: Metrics tracking with DVC
