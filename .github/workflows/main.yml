@@ -13,7 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     # - uses: iterative/setup-dvc@v1
-
     - name: Initalizing run
       env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,15 +24,11 @@ jobs:
           echo "## Model Metrics : Comparing with master branch"
           dvc metrics diff --show-md master > report.md          
           cml-send-comment report.md
-        
     - name: Install dependencies
       run: |
         pip install -r "./Landslide Deploment/requirements.txt"
-
-    
     - name: Login to Wandb
       run: wandb login ${{ secrets.WANDB_API_KEY }}
-      
     - name: Train and Test Model
       run: |
         python "./Landslide Deploment/model.py"
@@ -46,7 +41,6 @@ jobs:
     - name: Get changes
       run: |
         git status -uno
-
     - uses: EndBug/add-and-commit@v7
       with:
         add: .
