@@ -13,11 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Initalizing run
+      - name: Initalizing run and installing libs
         env:
             repo_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Install dependencies
         run: |
           pip install -r "./Landslide Deploment/requirements.txt"
       
