@@ -15,7 +15,7 @@ jobs:
     # - uses: iterative/setup-dvc@v1
 
     -name: Initalizing run
-      env:
+      env: 
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Install dependencies
