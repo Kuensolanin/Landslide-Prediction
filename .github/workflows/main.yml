@@ -14,8 +14,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Initalizing run and installing libs
-        env:
-            repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r "./Landslide Deploment/requirements.txt"
       
@@ -27,10 +25,14 @@ jobs:
           python "./Landslide Deploment/model.py"
           # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
 
-          # echo "## Model Metrics : Comparing with master branch"
+      - name: Metrics tracking with DVC
+        env:
+            repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "## Model Metrics : Comparing with master branch"
 
-          # dvc metrics diff --show-md master > report.md        
-          # cml-send-comment report.md
+          dvc metrics diff --show-md master > report.md        
+          cml-send-comment report.md
       
       - name: Get changes
         run: |
