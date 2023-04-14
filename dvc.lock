@@ -5,11 +5,11 @@ stages:
     deps:
     - path: ./Landslide Deploment/model.py
       md5: 59c45090f1371c8889123fad3db0291f
-      size: 1358
+      size: 1315
     outs:
     - path: LandslideRF.pkl
-      md5: db010281831ade0ad2ad917dcfa3f029
-      size: 1286306
+      md5: 4267135f7cae7f8dec3e26442f63e4fa
+      size: 1299296
     - path: metrics.json
       md5: 4c798fb27b998438d47821dcdaf0d381
       size: 31
