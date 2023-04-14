@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    # - uses: iterative/setup-dvc@v1
+
     - name: "Initalizing run"
       env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
