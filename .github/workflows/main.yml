@@ -29,7 +29,8 @@ jobs:
         run: |
           echo "## Model Metrics : Comparing with master branch"
 
-          dvc metrics diff --show-md master > report.md        
+          dvc metrics diff --show-md master > report.md
+          echo "## Results plot" >> report.md        
           cml-send-comment report.md
       
       - name: Get changes
