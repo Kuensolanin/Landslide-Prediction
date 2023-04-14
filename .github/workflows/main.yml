@@ -27,7 +27,7 @@ jobs:
         env:
             repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          dvc repro
+          git fetch -p
           dvc metrics diff --show-md master > report.md
           echo "## Results plot" >> report.md        
           cml-send-comment report.md
