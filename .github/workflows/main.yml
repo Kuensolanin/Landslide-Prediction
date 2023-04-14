@@ -16,7 +16,6 @@ jobs:
 
     - name: Initalizing run
       env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
