@@ -1,8 +1,6 @@
 name: Train and Test Model
 
-on:
-  push:
-    branches: [ master ]
+on: [push]
 
 jobs:
   run:
