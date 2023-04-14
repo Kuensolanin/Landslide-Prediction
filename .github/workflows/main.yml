@@ -16,15 +16,7 @@ jobs:
       - name: Initalizing run
         env:
             repo_token: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          pip install -r requirements.txt
-          dvc repro
-          git fetch --prune
-          
-          echo "## Model Metrics : Comparing with master branch"
-          dvc metrics diff --show-md master > report.md          
-          cml-send-comment report.md
-      
+
       - name: Install dependencies
         run: |
           pip install -r "./Landslide Deploment/requirements.txt"
