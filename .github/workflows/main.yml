@@ -11,11 +11,11 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: "Initalizing run"
-      env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Initalizing run
+        env:
+            repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
           dvc repro
@@ -24,26 +24,31 @@ jobs:
           echo "## Model Metrics : Comparing with master branch"
           dvc metrics diff --show-md master > report.md          
           cml-send-comment report.md
-    - name: Install dependencies
-      run: |
-        pip install -r "./Landslide Deploment/requirements.txt"
-    - name: Login to Wandb
-      run: wandb login ${{ secrets.WANDB_API_KEY }}
-    - name: Train and Test Model
-      run: |
-        python "./Landslide Deploment/model.py"
-        # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
+      
+      - name: Install dependencies
+        run: |
+          pip install -r "./Landslide Deploment/requirements.txt"
+      
+      - name: Login to Wandb
+        run: wandb login ${{ secrets.WANDB_API_KEY }}
+      
+      - name: Train and Test Model
+        run: |
+          python "./Landslide Deploment/model.py"
+          # dvc add "./Landslide Deploment/LandslideRF.pkl" "./Landslide Deploment/bhutan_landslide_data.csv"
 
-        echo "## Model Metrics : Comparing with master branch"
+          echo "## Model Metrics : Comparing with master branch"
 
-        dvc metrics diff --show-md master > report.md        
-        cml-send-comment report.md
-    - name: Get changes
-      run: |
-        git status -uno
-    - uses: EndBug/add-and-commit@v7
-      with:
-        add: .
-        author_name: CI-CD Pipeline run
-        author_email: klhendup01@gmail.com
-        message: "adding changes from run"
+          dvc metrics diff --show-md master > report.md        
+          cml-send-comment report.md
+      
+      - name: Get changes
+        run: |
+          git status -uno
+      
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: .
+          author_name: CI-CD Pipeline run
+          author_email: klhendup01@gmail.com
+          message: "adding changes from run"
